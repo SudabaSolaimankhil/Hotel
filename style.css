@@ -308,3 +308,105 @@ h3,
     transform: translateX(-50%);
   }
 }
+/* ---------- footer ---------- */
+footer.site-footer {
+  background: #0a0d1f;
+  color: rgba(247, 244, 236, 0.72);
+  padding-top: 4.5rem;
+}
+footer.site-footer h6 {
+  color: var(--gold-light);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+footer.site-footer .footer-brand {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--ivory);
+  font-size: 1.6rem;
+}
+footer.site-footer a {
+  color: rgba(247, 244, 236, 0.68);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: color 0.25s;
+}
+footer.site-footer a:hover {
+  color: var(--gold-light);
+}
+footer.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer.site-footer ul li {
+  margin-bottom: 0.65rem;
+}
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(212, 175, 106, 0.35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  transition: 0.3s;
+}
+.social-circle:hover {
+  background: var(--gold-light);
+  color: var(--midnight);
+  border-color: var(--gold-light);
+  transform: translateY(-3px);
+}
+.footer-newsletter input {
+  background: transparent;
+  border: 1px solid rgba(212, 175, 106, 0.35);
+  color: var(--ivory);
+  border-radius: 0;
+  font-size: 0.88rem;
+}
+.footer-newsletter input::placeholder {
+  color: rgba(247, 244, 236, 0.5);
+}
+.footer-bottom {
+  border-top: 1px solid rgba(212, 175, 106, 0.12);
+  margin-top: 3rem;
+  padding: 1.3rem 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgba(247, 244, 236, 0.5);
+}
+
+/* back to top */
+.to-top {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 50;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--midnight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: 0.35s ease;
+  border: none;
+}
+.to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.to-top:hover {
+  background: var(--midnight);
+  color: var(--gold-light);
+}
