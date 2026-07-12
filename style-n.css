@@ -1,4 +1,45 @@
 /* ---------- services ---------- */
+
+:root {
+    --midnight: #10142b;
+    --midnight-2: #1b2142;
+    --gold: #d4af6a;
+    --gold-light: #ead4a0;
+    --ivory: #f7f4ec;
+    --coral: #c97b63;
+    --ink: #20243b;
+    --muted: #6b7080;
+    --font-display: "Fraunces", serif;
+    --font-body: "Manrope", sans-serif;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--ivory);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+    font-family: var(--font-display);
+}
+
+.italic-accent {
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+
+
 .services-section {
     background: var(--midnight);
     color: var(--ivory);
