@@ -389,6 +389,155 @@ h3,
   font-size: 0.92rem;
   margin: 0;
 }
+/* Services */
+.services-section {
+  background: var(--midnight);
+  color: var(--ivory);
+  position: relative;
+}
+
+.services-section .section-title {
+  color: var(--ivory);
+}
+
+.services-section .eyebrow {
+  color: var(--gold-light);
+}
+
+.service-card {
+  background: rgba(247, 244, 236, 0.03);
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  border-radius: 10px;
+  padding: 2.3rem 1.7rem;
+  height: 100%;
+  transition: transform 0.35s ease, background 0.35s ease,
+    border-color 0.35s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.service-card:hover {
+  background: rgba(212, 175, 106, 0.07);
+  border-color: var(--gold);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--gold-light);
+  margin-bottom: 1.1rem;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(-8deg) scale(1.08);
+  background: var(--gold);
+  color: var(--midnight);
+}
+
+.service-card h5 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.28rem;
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  color: rgba(247, 244, 236, 0.68);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/*  testimonials  */
+.testimonials-section {
+  background: var(--ivory);
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.6rem 2.4rem;
+  box-shadow: 0 25px 55px -30px rgba(16, 20, 43, 0.35);
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.quote-mark {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+.testimonial-text {
+  font-size: 1.15rem;
+  color: var(--ink);
+  line-height: 1.75;
+  margin-bottom: 1.6rem;
+}
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.testimonial-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  margin-bottom: 0.7rem;
+}
+.testimonial-name {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.testimonial-role {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+#testimonialCarousel .carousel-indicators {
+  bottom: -52px;
+}
+#testimonialCarousel .carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  opacity: 0.35;
+  border: none;
+}
+#testimonialCarousel .carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(16, 20, 43, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--midnight);
+  background: #fff;
+  transition: 0.3s;
+}
+.carousel-arrow:hover {
+  background: var(--midnight);
+  color: var(--gold-light);
+  border-color: var(--midnight);
+}
 
 /* Contact */
 .contact-info-item {
@@ -564,69 +713,4 @@ footer.site-footer ul li {
 .to-top:hover {
   background: var(--midnight);
   color: var(--gold-light);
-}
-
-/* Services */
-.services-section {
-  background: var(--midnight);
-  color: var(--ivory);
-  position: relative;
-}
-
-.services-section .section-title {
-  color: var(--ivory);
-}
-
-.services-section .eyebrow {
-  color: var(--gold-light);
-}
-
-.service-card {
-  background: rgba(247, 244, 236, 0.03);
-  border: 1px solid rgba(212, 175, 106, 0.2);
-  border-radius: 10px;
-  padding: 2.3rem 1.7rem;
-  height: 100%;
-  transition: transform 0.35s ease, background 0.35s ease,
-    border-color 0.35s ease;
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-
-.service-card:hover {
-  background: rgba(212, 175, 106, 0.07);
-  border-color: var(--gold);
-}
-
-.service-icon {
-  width: 56px;
-  height: 56px;
-  border: 1px solid var(--gold);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  color: var(--gold-light);
-  margin-bottom: 1.1rem;
-  transition: transform 0.4s ease, background 0.4s ease;
-}
-
-.service-card:hover .service-icon {
-  transform: rotate(-8deg) scale(1.08);
-  background: var(--gold);
-  color: var(--midnight);
-}
-
-.service-card h5 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.28rem;
-  margin-bottom: 0.6rem;
-}
-
-.service-card p {
-  color: rgba(247, 244, 236, 0.68);
-  font-size: 0.9rem;
-  margin: 0;
 }
