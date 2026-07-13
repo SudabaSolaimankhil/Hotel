@@ -145,6 +145,14 @@ h3,
   border-color: var(--ivory);
 }
 
+.navbar-nav .nav-link-aria.active {
+  opacity: 1 !important;
+  color: var(--gold-light) !important;
+}
+.navbar-nav .nav-link-aria.active::after {
+  width: 100% !important;
+}
+
 /*  hero  */
 .hero {
   position: relative;

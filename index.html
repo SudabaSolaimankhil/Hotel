@@ -14,6 +14,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -692,6 +693,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+      // active nav-links
+      const links = document.querySelectorAll(".nav-link-aria");
+      const sections = document.querySelectorAll(
+        "header[id], section[id], div[id]"
+      );
+
+      window.addEventListener("scroll", () => {
+        let top = window.scrollY + 120;
+        sections.forEach((sec) => {
+          if (top >= sec.offsetTop && top < sec.offsetTop + sec.offsetHeight) {
+            links.forEach((lnk) => {
+              lnk.classList.remove("active");
+              if (lnk.getAttribute("href") === `#${sec.id}`)
+                lnk.classList.add("active");
+            });
+          }
+        });
+      });
       // navbar shrink on scroll
       const nav = document.getElementById("mainNav");
       const toTop = document.getElementById("toTop");
