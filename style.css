@@ -335,7 +335,7 @@ h3,
 .rule-gold.center {
   margin: 0 auto 1.3rem;
 }
-
+/* about */
 .about-img-wrap {
   position: relative;
   clip-path: inset(0 0 0 0);
@@ -388,6 +388,101 @@ h3,
   color: var(--muted);
   font-size: 0.92rem;
   margin: 0;
+}
+
+/*  rooms & rates  */
+.rooms-section {
+  background: var(--ivory);
+}
+.room-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -28px rgba(16, 20, 43, 0.35);
+  height: 100%;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 55px -25px rgba(16, 20, 43, 0.4);
+}
+.room-img {
+  position: relative;
+  overflow: hidden;
+  height: 230px;
+}
+.room-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 0.84, 0.44, 1);
+}
+.room-card:hover .room-img img {
+  transform: scale(1.1);
+}
+.room-price-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--midnight);
+  color: var(--gold-light);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 30px;
+  border: 1px solid var(--gold);
+}
+.room-price-tag span {
+  font-size: 0.65rem;
+  font-family: var(--font-body);
+  color: var(--ivory);
+  opacity: 0.6;
+  display: block;
+  text-align: center;
+}
+.room-body {
+  padding: 1.6rem 1.5rem 1.8rem;
+}
+.room-body h5 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+.room-body p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+.amenity-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--midnight);
+  background: rgba(212, 175, 106, 0.14);
+  border-radius: 20px;
+  padding: 0.28rem 0.7rem;
+  margin: 0 0.3rem 0.4rem 0;
+}
+.amenity-pill i {
+  color: var(--coral);
+}
+.room-book-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--midnight);
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 2px;
+  transition: 0.25s;
+}
+.room-book-link:hover {
+  color: var(--coral);
+  gap: 0.65rem;
 }
 /* Services */
 .services-section {
